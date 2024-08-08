@@ -1,1 +1,1 @@
-# stitch-at-home.com
+#www.stitch-at-home.com
