@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stitch at Home</title>
+    <style>
+        /* Reset some default styles */
+        body, h1, h2, h3, p, ul, li, a, form, input, button {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* General styles */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+
+        /* Header */
+        header {
+            background: #f4f4f4;
+            padding: 20px 0;
+            border-bottom: 1px solid #ddd;
+        }
+
+        header h1 {
+            float: left;
+            margin: 0;
+        }
+
+        header nav ul {
+            float: right;
+            list-style: none;
+        }
+
+        header nav ul li {
+            display: inline;
+            margin-left: 10px;
+        }
+
+        header nav ul li a {
+            text-decoration: none;
+            color: #333;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: #e9ecef;
+            padding: 60px 0;
+            text-align: center;
+        }
+
+        .hero h2 {
+            font-size: 2.5em;
+        }
+
+        .hero p {
+            font-size: 1.2em;
+        }
+
+        .hero .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background: #007bff;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        /* Featured Projects */
+        .featured-projects {
+            padding: 40px 0;
+            text-align: center;
+        }
+
+        .featured-projects h2 {
+            margin-bottom: 20px;
+        }
+
+        .projects-grid {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .project {
+            flex: 1 1 calc(33% - 20px);
+            margin: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+
+        .project img {
+            width: 100%;
+            height: auto;
+        }
+
+        .project h3 {
+            padding: 10px;
+        }
+
+        .project a {
+            display: block;
+            padding: 10px;
+            background: #007bff;
+            color: #fff;
+            text-decoration: none;
+            text-align: center;
+        }
+
+        /* Newsletter Signup */
+        .newsletter {
+            background: #f4f4f4;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        .newsletter form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .newsletter input {
+            margin: 5px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .newsletter button {
+            padding: 10px 20px;
+            background: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        /* Footer */
+        footer {
+            background: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        footer nav ul {
+            list-style: none;
+        }
+
+        footer nav ul li {
+            display: inline;
+            margin-left: 10px;
+        }
+
+        footer nav ul li a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        .social-media {
+            margin-top: 10px;
+        }
+
+        .social-media a {
+            color: #fff;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <h1>Stitch at Home</h1>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Tutorials</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="#">Resources</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h2>Welcome to Stitch at Home!</h2>
+            <p>Your ultimate destination for sewing tutorials, tips, and inspiration.</p>
+            <a href="#" class="btn">Explore Tutorials</a>
+        </div>
+    </section>
+
+    <!-- Featured Projects -->
+    <section class="featured-projects">
+        <div class="container">
+            <h2>Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project">
+                    <img src="https://via.placeholder.com/300x200" alt="Project 1">
+                    <h3>Easy DIY Pillow Covers</h3>
+                    <a href="#">Read More</a>
+                </div>
+                <div class="project">
+                    <img src="https://via.placeholder.com/300x200" alt="Project 2">
+                    <h3>Beginner’s Guide to Sewing</h3>
+                    <a href="#">Read More</a>
+                </div>
+                <div class="project">
+                    <img src="https://via.placeholder.com/300x200" alt="Project 3">
+                    <h3>Handmade Tote Bag</h3>
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Signup -->
+    <section class="newsletter">
+        <div class="container">
+            <h2>Subscribe for the Latest Tips and Patterns!</h2>
+            <form action="#" method="post">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Stitch at Home. All rights reserved.</p>
+            <nav>
+                <ul>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                </ul>
+            </nav>
+            <div class="social-media">
+                <a href="#">Facebook</a>
+                <a href="#">Instagram</a>
+                <a href="#">Pinterest</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
